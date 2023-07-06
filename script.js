@@ -1,3 +1,15 @@
+gapi.client.init({
+  apiKey: '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',
+  clientId: '5003383808-ulp0onl2mn10qjb5lfuqcbqekrc50bsh.apps.googleusercontent.com',
+  discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+  scope: 'https://www.googleapis.com/auth/spreadsheets',
+}).then(function () {
+  console.error('Inicio del cliente exitoso');
+}, function (error) {
+  // Manejo del error de autenticación
+  console.error('Error al inicializar el cliente:', error);
+});
+
 class Round {
   constructor(num, min, ptsA, ptsB) {
     this.num = num;
@@ -215,3 +227,5 @@ document.getElementById("tarjetaForm").addEventListener("submit", function (even
     botones.classList.add("hidden");
   }
 });
+
+
