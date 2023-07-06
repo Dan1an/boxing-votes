@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario para crear una Tarjeta</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Formulario para crear una Tarjeta</h1>
+
+  <form id="tarjetaForm">
+    <label for="boxerAName">Nombre Boxeador A:</label>
+    <input type="text" id="boxerAName" name="boxerAName" required><br><br>
+
+    <label for="boxerBName">Nombre Boxeador B:</label>
+    <input type="text" id="boxerBName" name="boxerBName" required><br><br>
+
+    <label for="numRounds">Número de Rounds:</label>
+    <input type="number" id="numRounds" name="numRounds" required><br><br>
+
+    <label for="roundsTime">Minutos por Round:</label>
+    <input type="number" id="roundsTime" name="roundsTime" required><br><br>
+
+    <input type="submit" value="Crear Tarjeta">
+  </form>
+
+  <div id="tarjetaInfo" class="hidden">
+    <!-- Aquí se mostrará la información de la tarjeta -->
+  </div>
+
+  <div id="puntuacion" class="hidden">
+    <!-- Aquí se mostrará la información de puntuación -->
+    <p id="roundMin">Round 1, Minuto 1</p>
+  </div>
+
+  <div id="botones" class="hidden">
+    <button id="ganadorA">Gano "Boxeador A"</button>
+    <button id="ganadorB">Gano "Boxeador B"</button>
+    <button id="empate">Empate</button>
+    <button id="derriboA">Knockdown Boxeador A</button>
+    <button id="derriboB">Knockdown Boxeador B</button>
+    <button id="faltaA">Falta Boxeador A</button>
+    <button id="faltaB">Falta Boxeador B</button>
+  </div>
+
+  <div id="resultadoFinal" class="hidden">
+    <!-- Aquí se mostrará el resultado final de la pelea -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
